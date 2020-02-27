@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "res"
+  # spec.source_files  = "res/iOS/*"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -103,8 +103,9 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # spec.resource  = "icon.png"
+  # spec.resource  = "res/iOS/*"
   # spec.resources = "Resources/*.png"
+  spec.vendored_frameworks = "res/RevealServer.framework"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -115,7 +116,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
+  # spec.framework  = ""
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
